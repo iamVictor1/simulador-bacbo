@@ -7,6 +7,17 @@ import plotly.express as px
 st.set_page_config(page_title="Simulador de Bac Bo", layout="centered")
 
 st.title("🎲 Simulador de Bac Bo com IA Simples")
+st.markdown("""
+### ℹ️ O que é "Máximo Martingale"?
+
+O **Martingale** é uma estratégia onde você **dobra sua aposta após uma perda** para tentar recuperar o prejuízo e ainda lucrar.
+
+- Exemplo: se apostar 10 e perder, aposta 20. Se perder de novo, aposta 40... e assim por diante.
+- Com **"Máximo Martingale"**, você define **quantas vezes seguidas** pode dobrar a aposta antes de **parar o ciclo**.
+- Isso ajuda a **proteger sua banca** contra sequências longas de perdas.
+
+⚠️ Quanto maior o número, maior o risco e o capital necessário.
+""")
 
 # === Configurações do usuário ===
 col1, col2 = st.columns(2)
